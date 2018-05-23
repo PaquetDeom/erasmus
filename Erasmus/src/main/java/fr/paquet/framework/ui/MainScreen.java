@@ -59,7 +59,7 @@ public class MainScreen extends HorizontalLayout {
 	}
 
 	//Ajoute une vue au menu
-	public void addView(ProgView view) {
+	public void addView(ErasmusView view) {
 		menu.addView(view, view.getCaption(), view.getCaption(), view.getIcon());
 	}
 	// notify the view menu about view changes so that it can display which view

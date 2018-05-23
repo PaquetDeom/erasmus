@@ -19,7 +19,7 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.themes.ValoTheme;
 import fr.paquet.framework.authentication.*;
 import fr.paquet.framework.ui.LoginScreen.*;
-
+import fr.paquet.ihm.demo.Demo;
 import fr.paquet.framework.ErasmusContainer;
 
 /**
@@ -31,7 +31,6 @@ import fr.paquet.framework.ErasmusContainer;
 public class ERASMUSUI extends UI {
 
 	public static final String PERSISTENCE_UNIT = "erasmus";
-	
 
 	public static String getPersistenceUnit() {
 		return PERSISTENCE_UNIT;
@@ -101,7 +100,7 @@ public class ERASMUSUI extends UI {
 		addStyleName(ValoTheme.UI_WITH_MENU);
 
 		try {
-		//TODO screen
+			getMainScreen().addView(new Demo());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

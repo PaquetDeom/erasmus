@@ -15,7 +15,7 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.FormLayout;
 
-public class CRUDView extends AbsoluteLayout implements Property.ValueChangeListener, Handler, ClickListener, ProgView {
+public class CRUDView extends AbsoluteLayout implements Property.ValueChangeListener, Handler, ClickListener, ErasmusView {
 
 	/**
 	 * 
